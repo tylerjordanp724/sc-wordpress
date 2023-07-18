@@ -1,0 +1,50 @@
+// Footer
+// -------------------------
+
+.footer {
+    color: $white;
+
+    &__col {
+        width: 100%;
+    }
+
+    &__col .social-links {
+        ul li a {
+            font-size: 18px;
+            margin-right: 5px;
+        }
+    }
+
+    &__col-links ul {
+        @include breakFirst ($screen-lg) {
+            text-align: right;
+        }
+    }
+
+    &__links {
+        ul, ul li {
+            display: block;
+            font-size: 10px;
+            text-transform: uppercase;
+            font-weight: 700;
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        ul li {
+            display: inline;
+            text-align: right;
+        }
+
+        ul li a {
+            color: $white;
+            transition: opacity 0.3s $cbTrans;
+
+            @include breakFirst($screen-md) {
+                &:hover {
+                    opacity: 0.5;
+                }
+            }
+        }
+    }
+}

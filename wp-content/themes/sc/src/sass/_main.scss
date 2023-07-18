@@ -1,0 +1,82 @@
+// Main
+// -------------------------
+
+.content-row {
+    padding: 30px 15px;
+    background-color: $black;
+    position: relative;
+    z-index: 0;
+
+    &__bg-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+        opacity: 0.8;
+
+        img {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: blur(0.5em);
+            transform: scale(1.1);
+
+        }
+    }
+
+    @include breakFirst($screen-md) {
+        padding: 45px 30px;
+    }
+
+    &__title h2 {
+        font-family: $fontFamily;
+        font-weight: 300;
+        font-size: 20px;
+        color: $white;
+        margin-bottom: 30px;
+
+        @include breakFirst($screen-md) {
+            font-size: 24px;
+        }
+    }
+}
+
+.banner-row {
+    margin-bottom: 30px;
+    &__img {
+        position: relative;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        margin-bottom: 30px;
+
+        @include breakFirst($screen-md) {
+            margin: 0 15px;
+            padding-bottom: 33.3333%;
+        }
+
+        img {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            margin: 0 auto;
+        }
+
+    }
+}
+
+.item-col {
+    padding: 0 15px;
+}

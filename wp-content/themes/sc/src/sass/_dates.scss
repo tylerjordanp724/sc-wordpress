@@ -1,0 +1,69 @@
+.dates {
+    &__item {
+        color: $white;
+        margin-bottom: 45px;
+    }
+
+    .date {
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 18px;
+        letter-spacing: 1.4px;
+        
+        span {
+            display: block;
+        }
+    }
+
+    .venue {
+        margin-bottom: 15px;
+
+        &__name, 
+        &__location {
+            padding: 0 15px;
+            width: 100%;
+
+            @include breakFirst($screen-md) {
+                min-width: 220px;
+                max-width: 220px;
+            }
+
+            @include breakFirst($screen-lg) {
+                min-width: 280px;
+                max-width: 280px;
+            }
+        }
+
+        span {
+            display: block;
+            line-height: 18px;
+            width: 100%;
+        }
+
+        @include breakFirst($screen-lg) {
+            width: 66.66667%;
+        }
+
+        &__name {
+            text-transform: uppercase;
+            letter-spacing: 1.6px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        &__location {
+            font-family: $serifFontFamily;
+            font-style: italic;
+            font-size: 18px;
+        }
+    }
+
+    .ticket-link {
+        padding: 0 15px;
+
+        @include breakFirst($screen-md) {
+            padding: 0;
+        }
+    }
+}

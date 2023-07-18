@@ -1,0 +1,106 @@
+// Header
+// -------------------------
+.header {
+    height: auto;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.3s $cbTrans;
+
+    @include breakFirst($screen-md) {
+        padding: 30px;
+    }
+
+    &__title a {
+        color: $white;
+        transition: opacity 0.3s $cbTrans;
+
+        &:focus,
+        &:active,
+        &:visited {
+            color: $white;
+        }
+
+        @include breakFirst ($screen-md) {
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    &__title {
+        color: $white;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+
+    &.scrolled {
+        background-color: $black;
+
+        a:hover, a:active, a:focus {
+            color: $white;
+        }
+    }
+
+    nav ul li a {
+        color: $white;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 14px;
+        letter-spacing: 1.4px;
+        position: relative;
+        overflow: hidden;
+        display: block;
+        width: fit-content;
+        padding: 5px 0;
+        margin: 0 15px;
+
+        &:active,
+        &:visited,
+        &:focus,
+        &:hover {
+            color: $white;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 2px;
+            background-color: $white;
+            bottom: 5px;
+            right: 0;
+            transition: 0.3s width $cbTrans;
+        }
+
+        &.active:before {
+            left: 0;
+            right: auto;
+            width: 100%;
+        }
+
+        @include breakFirst($screen-md) {
+
+            margin: 0 30px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &:hover:before {
+                left: 0;
+                right: auto;
+                width: 100%;
+            }
+        }
+
+        
+        
+    }
+
+}

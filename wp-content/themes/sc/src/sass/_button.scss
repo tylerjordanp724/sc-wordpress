@@ -1,0 +1,72 @@
+// Buttons
+// -------------------------
+
+button.btn,
+a.btn {
+    display: block;
+    appearance: none;
+    font-family: $fontFamily;
+    font-weight: 300;
+    color: $black;
+    border: solid 2px $white;
+    background-color: $white;
+    border-radius: 50px;
+    width: fit-content;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1.4px;
+    cursor: pointer;
+    transition: all $cbTrans 0.3s;
+
+    &--center {
+        margin: auto;
+    }
+
+    &--play {
+        position: absolute;
+        background-color: transparent;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 0;
+        border-left: 25px solid $white;
+        border-top: 13px solid transparent;
+        border-bottom: 13px solid transparent;
+        border-right: 0;
+        padding: 0;
+        transition: opacity 0.3s $cbTrans;
+
+        @include breakFirst($screen-md) {
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    @include breakFirst($screen-md) {
+        background-color: transparent;
+        color: $white;
+        &:hover {
+            background-color: $white;
+            color: $black;
+        }
+
+        &--play:hover {
+            color: 0;
+            background-color: transparent;
+        }
+    }
+
+    &--inverse {
+        color: $black;
+        border: solid 2px $black;
+
+        &:hover {
+            background-color: $black;
+            color: $white;
+        }
+    }
+}
