@@ -26,68 +26,13 @@ get_header()?>
     ?>
         <?php if($content_row == 'hero'):?>
             <?php get_template_part('template-parts/components/component', 'hero');?>
+        <?php elseif($content_row == 'media_carousel'):?>
+            <?php get_template_part('template-parts/components/component', 'media-carousel');?>
+        <?php elseif($content_row == 'media_banner'):?>
+            <?php get_template_part('template-parts/components/component', 'media-banner');?>
         <?php endif;?>
     <?php endwhile; endif;?>
-    <div class="content-row" id="listen">
-        <div class="content-row__title text-center">
-            <h2>Listen</h2>
-        </div>
-        <div class="content-row__wrapper container-sm">
-            <div class="slide-carousel effect--slide-up">
-                <div class="slide-carousel__slide d-lg-flex flex-lg-row-reverse align-items-lg-center">
-                    <div class="slide-carousel__slide-img col-lg">
-                        <img class="b-lazy" data-src="img/sc_img_00.jpg" />
-                    </div>
-                    <div class="slide-carousel__slide-text col-lg text-center">
-                        <h3 class="f--label">title</h3>
-                        <a href="#" class="btn btn--center">listen / download</a>
-                    </div>
-                </div>
-                <div class="slide-carousel__slide d-lg-flex flex-lg-row-reverse align-items-lg-center">
-                    <div class="slide-carousel__slide-img col-lg">
-                        <img class="b-lazy" data-src="img/sc_img_01.jpg" />
-                    </div>
-                    <div class="slide-carousel__slide-text col-lg text-center">
-                        <h3 class="f--label">title</h3>
-                        <a href="#" class="btn btn--center">listen / download</a>
-                    </div>
-                </div>
-                <div class="slide-carousel__slide d-lg-flex flex-lg-row-reverse align-items-lg-center">
-                    <div class="slide-carousel__slide-img col-lg">
-                        <img class="b-lazy" data-src="img/sc_img_00.jpg" />
-                    </div>
-                    <div class="slide-carousel__slide-text col-lg text-center">
-                        <h3 class="f--label">title</h3>
-                        <a href="#" class="btn btn--center">listen / download</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="content-row" id="shop">
-        <div class="content-row__bg-image">
-            <img class="b-lazy" data-src="img/sc_img_00.jpg" />
-        </div>
-        <div class="content-row__title text-center">
-            <h2>Shop</h2>
-        </div>
-        <div class="content-row__wrapper container-sm">
-            <div class="banner-row d-md-flex align-items-md-center justify-content-evenly effect--slide-up">
-                <div class="banner-row__img">
-                    <img class="b-lazy" data-src="http://placehold.it/300X200" />
-                </div>
-                <div class="banner-row__img">
-                    <img class="b-lazy" data-src="http://placehold.it/300X200" />
-                </div>
-                <div class="banner-row__img">
-                    <img class="b-lazy" data-src="http://placehold.it/300X200" />
-                </div>
-            </div>
-            <div class="banner-row__cta">
-                <a href="https://sabrinaclaudioshop.com/password" target="_blank" class="btn btn--center">view all</a>
-            </div>
-        </div>
-    </div>
+
     <div class="content-row" id="look">
         <div class="content-row__title text-center">
             <h2>Look</h2>
