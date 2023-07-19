@@ -17,7 +17,6 @@
             <h2>Shop</h2>
         </div>
     <?php endif;?>
-   
     <div class="content-row__wrapper container-sm">
         <?php if(!empty($media_images)):?>
             <div class="banner-row d-md-flex align-items-md-center justify-content-evenly effect--slide-up">
