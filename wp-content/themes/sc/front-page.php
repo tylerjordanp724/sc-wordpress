@@ -5,7 +5,6 @@
  * 
  */
 get_header()?> 
-
     <div class="header effect--fade-in">
         <div class="header__wrapper container-md text-center text-md-left d-block d-md-flex justify-content-md-between align-items-md-center">
             <div class="header__title"><a href="#">Sabrina Claudio</a></div>
@@ -32,60 +31,9 @@ get_header()?>
             <?php get_template_part('template-parts/components/component', 'media-banner');?>
         <?php elseif($content_row == 'video_carousel'):?>
             <?php get_template_part('template-parts/components/component', 'video-carousel');?>
+        <?php elseif($content_row == 'dates'):?>
+            <?php get_template_part('template-parts/components/component', 'dates-list');?>
         <?php endif;?>
     <?php endwhile; endif;?>
-
-
-    <div class="content-row" id="live">
-        <div class="content-row__title text-center">
-            <h2>Live</h2>
-        </div>
-        <div class="content-row__wrapper container-sm">
-            <div class="dates effect--slide-up">
-                <div class="dates__item">
-                    <div class="dates__item-details d-flex">
-                        <div class="date text-center">
-                            <span class="date__month">jun</span>
-                            <span class="date__day">11</span>
-                        </div>
-                        <div class="w-100 d-md-flex align-items-start justify-content-between">
-                            <div class="venue d-md-flex">
-                                <div class="venue__name">
-                                    <span>The Governer's Ball Music Festival</span>
-                                </div>
-                                <div class="venue__location">
-                                    <span>Flushing Meadows Corona Park Corona, NY</span>
-                                </div>
-                            </div>
-                            <div class="ticket-link justify-self-end">
-                                <a href="#" class="btn">tickets</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="dates__item">
-                    <div class="dates__item-details d-flex">
-                        <div class="date text-center">
-                            <span class="date__month">aug</span>
-                            <span class="date__day">19</span>
-                        </div>
-                        <div class="date__info w-100 d-md-flex align-items-start justify-content-between">
-                            <div class="venue d-md-flex">
-                                <div class="venue__name">
-                                    <span>Noise Fest</span>
-                                </div>
-                                <div class="venue__location">
-                                    <span>Chicago Fairgrounds Chicago, IL</span>
-                                </div>
-                            </div>
-                            <div class="ticket-link justify-self-end">
-                                <a href="#" class="btn">tickets</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     
 <?php get_footer();?>
