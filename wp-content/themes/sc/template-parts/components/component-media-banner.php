@@ -8,7 +8,7 @@
 
 <div class="content-row" id="<?php echo(strtolower($section_title));?>">
     <?php if(!empty($banner_img)):?>
-        <div class="content-row__bg-image">
+        <div class="content-row__banner-bg-image <?php if(empty($media_images)){ echo 'curtain';}?>">
             <img class="b-lazy" data-src="<?php echo $banner_img;?>" />
         </div>
     <?php endif;?>

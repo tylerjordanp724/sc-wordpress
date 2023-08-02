@@ -7,7 +7,7 @@
     position: relative;
     z-index: 0;
 
-    &__bg-image {
+    &__banner-bg-image {
         position: absolute;
         top: 0;
         left: 0;
@@ -27,6 +27,10 @@
             object-fit: cover;
             filter: blur(0.5em);
             transform: scale(1.1);
+        }
+
+        &.curtain {
+            opacity: 0.2;
         }
     }
 
