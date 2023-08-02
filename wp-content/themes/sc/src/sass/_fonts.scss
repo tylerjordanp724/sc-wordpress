@@ -8,3 +8,18 @@
     letter-spacing: 1.4px;
     margin-bottom: 0;
 }
+
+.f--body {
+    font-family: $fontFamily;
+    font-size: 16px;
+}
+
+h1.f--display-lg {
+    font-size: 84px;
+    font-family: $fontFamily;
+}
+
+h2.f--display-sm {
+    font-size: 36px;
+    font-family: $fontFamily;
+}

@@ -7,16 +7,22 @@
 get_header()?> 
     <div class="header effect--fade-in">
         <div class="header__wrapper container-md text-center text-md-left d-block d-md-flex justify-content-md-between align-items-md-center">
-            <div class="header__title"><a href="#">Sabrina Claudio</a></div>
+            <div class="header__title"><a href="#"><?php echo(get_bloginfo('name'));?></a></div>
             <div class="header__nav">
-                <nav>
-                    <ul class="nav justify-content-center">
-                        <li class="py-0"><a class="nav-link" href="#" data-loc="listen">listen</a></li>
-                        <li class="py-0"><a class="nav-link" href="#" data-loc="shop">shop</a></li>
-                        <li class="py-0"><a class="nav-link" href="#" data-loc="look">look</a></li>
-                        <li class="py-0"><a class="nav-link" href="#" data-loc="live">live</a></li>
-                    </ul>
-                </nav>
+                <?php if(have_rows('content_rows')):?>
+                    <nav>
+                        <ul class="nav justify-content-center">
+                            <?php while(have_rows('content_rows')): the_row();?>
+                                <?php if(get_row_layout() != 'hero'):?>
+                                    <?php
+                                        $section = get_sub_field('section_title');    
+                                    ?>
+                                    <li class="py-0"><a class="nav-link" href="#" data-loc="<?php echo (strtolower($section));?>"><?php echo $section;?></a></li>
+                                <?php endif;?>
+                            <?php endwhile;?>
+                        </ul>
+                    </nav>
+                <?php endif;?>
             </div>
         </div>
     </div>

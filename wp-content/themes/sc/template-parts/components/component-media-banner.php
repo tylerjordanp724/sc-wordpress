@@ -26,10 +26,16 @@
                     </div>
                 <?php endforeach;?>
             </div>
-        <?php endif;?>
-        <?php if(!empty($link)):?>
-            <div class="banner-row__cta">
-                <a href="<?php echo $link;?>" target="_blank" class="btn btn--center">shop all merch</a>
+            <?php if(!empty($link)):?>
+                <div class="banner-row__cta">
+                    <a href="<?php echo $link;?>" target="_blank" class="btn btn--center">shop all merch</a>
+                </div>
+            <?php endif;?>
+        <?php else:?>
+            <div class="banner-row d-flex align-items-center content-wrapper--h-sm text-white text-center">
+                <div class="container">
+                    <h2 class="f--display-sm">Coming Soon</h2>
+                </div>
             </div>
         <?php endif;?>
     </div>

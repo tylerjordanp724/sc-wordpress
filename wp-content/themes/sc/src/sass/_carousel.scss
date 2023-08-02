@@ -50,6 +50,14 @@
         }
     }
 
+    &__slide-img.img-r--1-1 {
+        padding-bottom: 100%;
+
+        @include breakFirst($screen-lg) {
+            padding-bottom: 45%;
+        }
+    }
+
     &__slide-text {
         color: $white;
 

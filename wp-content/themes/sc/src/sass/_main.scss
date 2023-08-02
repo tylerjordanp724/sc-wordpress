@@ -27,7 +27,6 @@
             object-fit: cover;
             filter: blur(0.5em);
             transform: scale(1.1);
-
         }
     }
 
@@ -45,6 +44,17 @@
         @include breakFirst($screen-md) {
             font-size: 24px;
         }
+    }
+}
+
+.content-wrapper {
+
+    &--h-sm {
+        height: 33vh;
+    }
+
+    &--h-full {
+        height: 100vh;
     }
 }
 

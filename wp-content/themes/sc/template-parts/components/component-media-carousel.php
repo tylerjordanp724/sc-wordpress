@@ -18,7 +18,7 @@
                 ?>
                     <div class="slide-carousel__slide d-lg-flex flex-lg-row-reverse align-items-lg-center">
                         <?php if(!empty($slide['image'])):?>
-                            <div class="slide-carousel__slide-img col-lg">
+                            <div class="slide-carousel__slide-img img-r--1-1 col-lg">
                                 <img class="b-lazy" data-src="<?php echo $slide['image'];?>" />
                             </div>
                         <?php endif;?>
