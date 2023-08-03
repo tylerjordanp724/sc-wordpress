@@ -5,6 +5,7 @@
 *.bak
 *.swp
 Thumbs.db
+config.codekit3
 
 # wordpress specific
 wp-admin/*
