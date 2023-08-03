@@ -161,6 +161,14 @@ function sc_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'sc_scripts' );
 
+if(function_exists('acf_add_options_page')) {
+	acf_add_options_page(array(
+		'page_title' => 'Footer Links',
+		'menu_title' => 'Footer Links',
+		'menu_slug' => 'footer-links',
+	));
+}
+
 /**
  * Implement the Custom Header feature.
  */
