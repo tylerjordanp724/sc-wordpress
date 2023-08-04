@@ -10,6 +10,16 @@
     }
 
     &__col .social-links {
+        margin-bottom: 15px;
+
+        @include breakFirst($screen-lg) {
+            margin-bottom: 0;
+        }
+
+        ul li:after {
+            display: none;
+        }
+
         ul li a {
             font-size: 18px;
             margin-right: 5px;
@@ -35,6 +45,15 @@
         ul li {
             display: inline;
             text-align: right;
+
+            &:after {
+                content: '/';
+                margin: 0 5px 0 5px;
+            }
+
+            &:last-child:after {
+                display: none;
+            }
         }
 
         ul li a {

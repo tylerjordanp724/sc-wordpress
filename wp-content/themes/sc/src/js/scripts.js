@@ -69,6 +69,23 @@ const headerNav = () => {
         $(this).addClass('active');
         $('html, body').animate({scrollTop: $(`#${currNavItem}`).offset().top - `${$(window).outerWidth() < 768 ? 120 : 90}`}, 200);
     });
+
+    $(window).on('scroll', () => {
+        // const $sections = $('.content-row');
+        // console.log($sections);
+        $('.nav-link').each(function(i){
+            console.log($(this).attr('data-loc'));
+            const top  = $('#' + $(this).attr('data-loc')).offset().top - 100;
+            // const bottom = top +$(el).height();
+            const scroll = $(window).scrollTop();
+            // const id = $(el).attr('id');
+            if( scroll > top){
+                $('.nav-link').removeClass('active');
+                $(this).addClass('active');
+
+            }
+        });
+    });
 }
 
 const sliderCarousel = () =>  {

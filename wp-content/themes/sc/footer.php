@@ -31,12 +31,14 @@
 			</div>
 			<div class="footer__col footer__col-links">
 				<ul>
-					<li>&copy;2023 <a href="https://grassfedmusic.com/" target="_blank">Grassfed Music</a>&nbsp;/&nbsp;</li>
-					<li><a href="#" target="_blank">terms of use</a></li>&nbsp;/&nbsp;
-					<li><a href="#" target="_blank">privacy policy</a></li>&nbsp;/&nbsp;
-					<li><a href="#" target="_blank">ad choices</a></li>&nbsp;/&nbsp;
-					<li><a href="#" target="_blank">cookie policy</a></li>&nbsp;/&nbsp;
-					<li><a href="#" target="_blank">don't sell or share my personal information</a></li>
+					<li>&copy;<?php echo get_the_date('Y');?> <a href="https://grassfedmusic.com/" target="_blank">Grassfed Music</a></li>
+					<li>Site by <a href="https://iamtjp.com/" target="_blank">Tyler Jordan Perry</a></li>
+					<?php if(have_rows('quick_links', 'option')) : while(have_rows('quick_links', 'option')) : the_row();
+						$link_label = get_sub_field('label');
+						$link_url = get_sub_field('url');
+					?>
+						<li><a href="<?php echo $link_url;?>" target="_blank"><?php echo $link_label;?></a></li>
+					<?php endwhile; endif;?>
 				</ul>
 			</div>
 		</div>
