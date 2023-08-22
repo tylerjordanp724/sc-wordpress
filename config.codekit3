@@ -7,7 +7,7 @@
       "uuidString" : "122C0C00-2531-4BF3-9AE2-CE8BCDACA18C"
     }
   ],
-  "creatorBuild" : "34510",
+  "creatorBuild" : "34513",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -19781,6 +19781,22 @@
       "oA" : 0,
       "oAP" : "\/wp-content\/themes\/sc\/404.php",
       "oF" : 0
+    },
+    "\/wp-content\/themes\/sc\/acf-json\/acf-export-2023-08-09.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/wp-content\/themes\/sc\/acf-json\/acf-export-2023-08-09-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
+    },
+    "\/wp-content\/themes\/sc\/acf-json\/group_64a758a2ed5e0.json" : {
+      "ft" : 524288,
+      "oA" : 1,
+      "oAP" : "\/wp-content\/themes\/sc\/acf-json\/group_64a758a2ed5e0-min.json",
+      "oF" : 0,
+      "oO" : 0,
+      "oS" : 1
     },
     "\/wp-content\/themes\/sc\/archive.php" : {
       "cB" : 0,
@@ -42319,9 +42335,6 @@
       "no-return-assign" : {
         "active" : 0,
         "optionString" : "'except-parens'"
-      },
-      "no-return-await" : {
-        "active" : 0
       },
       "no-script-url" : {
         "active" : 0
