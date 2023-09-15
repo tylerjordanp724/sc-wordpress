@@ -25,6 +25,6 @@
                 <span class="split-text">Out Now</span>
             <?php endif;?>
         </h1>
-        <?php if(!empty($hero_link)):?><a class="btn btn--center" href="<?php echo $hero_link;?>"><span>listen now</span></a><?php endif;?>
+        <?php if(!empty($hero_link)):?><a class="btn btn--center" href="<?php echo $hero_link['url'];?>"><span><?php echo $hero_link['title'];?></span></a><?php endif;?>
     </div>
 </div>

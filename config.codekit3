@@ -7,7 +7,7 @@
       "uuidString" : "122C0C00-2531-4BF3-9AE2-CE8BCDACA18C"
     }
   ],
-  "creatorBuild" : "34513",
+  "creatorBuild" : "34518",
   "files" : {
     "\/.gitignore" : {
       "cB" : 0,
@@ -24,6 +24,19 @@
       "oA" : 0,
       "oAP" : "\/.htaccess",
       "oF" : 0
+    },
+    "\/favicon.png" : {
+      "ft" : 32768,
+      "iS" : 2150,
+      "oA" : 0,
+      "oAP" : "\/favicon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/index.php" : {
       "cB" : 0,
@@ -21376,6 +21389,71 @@
       "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
+      "rq" : 75
+    },
+    "\/wp-content\/uploads\/2023\/09\/image0-150x150.png" : {
+      "ft" : 32768,
+      "iS" : 19617,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/uploads\/2023\/09\/image0-150x150.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/wp-content\/uploads\/2023\/09\/image0-300x300.png" : {
+      "ft" : 32768,
+      "iS" : 70494,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/uploads\/2023\/09\/image0-300x300.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/wp-content\/uploads\/2023\/09\/image0-768x768.png" : {
+      "ft" : 32768,
+      "iS" : 457529,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/uploads\/2023\/09\/image0-768x768.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/wp-content\/uploads\/2023\/09\/image0-1024x1024.png" : {
+      "ft" : 32768,
+      "iS" : 790673,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/uploads\/2023\/09\/image0-1024x1024.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/wp-content\/uploads\/2023\/09\/image0.png" : {
+      "ft" : 32768,
+      "iS" : 1107774,
+      "oA" : 0,
+      "oAP" : "\/wp-content\/uploads\/2023\/09\/image0.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
       "rq" : 75
     },
     "\/wp-cron.php" : {
