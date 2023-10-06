@@ -119,14 +119,6 @@ $(function(){
     });
     $('.slide-carousel--video').on('scroll.flickity', function(){
         bLazy.revalidate();
-        const activePlayer = $($(this).find('.is-selected')).get(0);
-
-        //console.log(activePlayer);
-        if(activePlayer) {
-            let activeIframe = $(this).find('iframe');
-
-            console.log(activePlayer);
-        }
     });
     fadeIn();
     slideUp();
