@@ -49,6 +49,20 @@
             font-size: 24px;
         }
     }
+
+    .message {
+        width: 100%;
+        padding: 20px 15px;
+        color: $white;
+        text-align: center;
+        border-radius: 8px;
+        @include background-opacity($white, 0.025);
+
+        span {
+            font-size: 14px;
+            text-transform: uppercase;
+        }
+    }
 }
 
 .content-wrapper {

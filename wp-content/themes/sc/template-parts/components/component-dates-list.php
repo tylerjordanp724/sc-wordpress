@@ -56,6 +56,10 @@
                     </div>
                 <?php endwhile;?>
             </div>
+        <?php else: ?>
+            <div class="message">
+                <span>Please stay tuned for upcoming dates!</span>
+            </div>
         <?php endif;?>
     </div>
  </div>
