@@ -1,4 +1,3 @@
-const colorBg = $('.content-row').data('accent');
 const $carousel = $('.slide-carousel');
 const $videoPlayer = $('.video-player');
 
@@ -111,6 +110,13 @@ const loadVideos = () => {
     });
 }
 
+const truncateText = () => {
+    $('.date__month').each(function() {
+        $(this).text($(this).text().substring(0,3));
+    });
+
+}
+
  
 $(function(){
     const bLazy = new Blazy();
@@ -128,4 +134,5 @@ $(function(){
     getVideoThumbs();
     loadVideos();
     videoCarousel();
+    truncateText();
 });
